@@ -23,9 +23,16 @@
 ### etap 3- pobranie wszystkich opinii o pojedynczym produkcie
 -zapisanie do struktury opinii
 -przechodzenie po kolejnych stronach z opiniamii
--
+-zapis wszystkich opinii o pojedynczym produkcie do pliku
 
 ## etap 4 -
 -transformacja i wyczyszczenie danych 
 -refaktoring kodu
 -parametryzacja 
+
+## Etap 5 (Pandas, Matplotlib)
+-wczytywanie opinii do ramki 
+-policzenie podstawowych statystyk
+-narysownie wykresów funkcji
+
+## Etap 6 interfejs webowy dla scrapera (Flask)
