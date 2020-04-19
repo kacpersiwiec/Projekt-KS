@@ -19,6 +19,6 @@ average_score = opinions.stars.mean().round(2)
 pros = opinions.pros.count()
 cons = opinions.cons.count()
 
-stars = opinions.stars.value_count()
+stars = opinions.stars.value_counts()
 
-print(stars, cons, stars)
+print(stars, cons, pros)
