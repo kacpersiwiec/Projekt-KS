@@ -2,7 +2,7 @@
 ## etap 1- analiza struktury [Ceneo.pl](https://www.ceneo.pl/)
 |Składowa                |Selektor                                         |Nazwa zmiennej|
 |------------------------|-------------------------------------------------|--------------|
-|opinia                  |li.js_product-review                             |opinion       |
+|opinia                  |div.js_product-review                             |opinion       |
 |identyfikator opinii    |["data-entry-id"]                                |opinion_id    |
 |autor opinii            |div.reviewer-name-line                           |author        |
 |rekomendacja            |div.product-review-summary > em                  |recommendation|
@@ -36,3 +36,17 @@
 -narysownie wykresów funkcji
 
 ## Etap 6 interfejs webowy dla scrapera (Flask)
+>   /Projekt KS
+>>        /run.py  
+>>        /config.py  
+>>        /app  
+>>>            /__init__.py
+>>>            /views.py  
+>>>            /models.py  
+>>>            /static/  
+>>>>                /main.css
+>>>            /templates/  
+>>>>                /layout.html
+>>>>                /extract.html
+>>>        /requirements.txt  
+>>>        /.venv

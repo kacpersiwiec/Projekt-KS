@@ -48,5 +48,6 @@ plt.title("REKOMENDACJA")
 plt.savefig("figures_png/" + product_id+"_bar.png")
 plt.close()
 
-opinions["purchased"] = opinions.purchase_date != None
+opinions["purchased"] = opinions["purchase_date"].apply(
+    lambda x: False if x == None else True)
 stars_purchased = pd.crosstab(opinions["stars"], opinions["purchased"])
