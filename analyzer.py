@@ -12,6 +12,7 @@ print(*os.listdir(input_directory))
 product_id = input("Podaj identyfikator produktu: ")
 
 # wczytanie do ramki danych opinii o pojedynczym produkcie
+
 opinions = pd.read_json(input_directory + "/" + product_id + ".json")
 opinions = opinions.set_index("opinion_id")
 

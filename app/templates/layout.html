@@ -17,25 +17,28 @@
         <header class="container text-center">
             <h1>Ceneo Scraper</h1>
         </header>
-
+        <br>
         <nav class="container navbar navbar-expand-lg navbar-dark bg-dark sticky-top rounded">
             <div class="">
-                <a class="navbar-brand" href="./"> Strona główna</a>
-                <a class="navbar-brand" href="./extract"> Pobierz opinie</a>
-                <a class="navbar-brand" href="./products"> Lista produktów</a>
-                <a class="navbar-brand" href="./about"> O projekcie</a>
+                <a class="navbar-brand" href="{{ url_for('index') }}"> Strona główna</a>
+                <a class="navbar-brand" href="{{ url_for('extract') }}"> Pobierz opinie</a>
+                <a class="navbar-brand" href="{{ url_for('products') }}"> Lista produktów</a>
+                <a class="navbar-brand" href="{{ url_for('about') }}"> O projekcie</a>
             </div>
         </nav>
-
         <div class="container" style="padding-top: 50px; padding-bottom: 100px;">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    {% block body %}
+                    {% block content %}
                         <p>Ala ma kota</p>
                     {% endblock %}
                 </div>
             </div>
         </div>
-        <footer>@Kacper Siwiec,UEK Kraków</footer>
+        <footer class="container navbar navbar-expand-lg navbar-dark bg-dark justify-content-center rounded fixed-bottom">
+            <p class="navbar-brand mb-0">Kacper Siwiec, UEK</p>
+        </footer>
     </body>
 </html>
+
+{% block scripts %}

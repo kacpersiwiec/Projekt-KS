@@ -1,4 +1,5 @@
 # Projekt-KS
+
 ## etap 1- analiza struktury [Ceneo.pl](https://www.ceneo.pl/)
 |Składowa                |Selektor                                         |Nazwa zmiennej|
 |------------------------|-------------------------------------------------|--------------|
